@@ -1,0 +1,29 @@
+
+<div class="background">
+  <h1 style="margin-top: -70px"> Awesome Recipe Checker</h1>
+  <div class="display" style="color: whitesmoke;">
+    <h5 style="margin: 20px">Your food:</h5>
+    <div>{{ food1 }}</div>
+    <div>{{ food2 }}</div>
+    <br>
+    <h5 style="margin: 20px">
+      {{ recipe }}
+    </h5>
+  </div>
+  <div class="container">
+    <div>
+      <h5>Choose 1 Meat</h5>
+      <button class="button" (click)="add1($event)" value="Beef">Beef</button>
+      <button class="button" (click)="add1($event)" value="Chicken">Chicken</button>
+      <button class="button" (click)="add1($event)" value="Pork">Pork</button>
+      <button class="button" (click)="add1($event)" value="Eggs">Eggs</button>
+    </div>
+    <div>
+      <h5>Choose 1 Veggie</h5>
+      <button class="button" (click)="add2($event)" value="Tomato">Tomato</button>
+      <button class="button" (click)="add2($event)" value="Potato">Potato</button>
+      <button class="button" (click)="add2($event)" value="Carrort">Carrorts</button>
+      <button class="button" (click)="add2($event)" value="白菜">白菜</button>
+    </div>
+  </div>
+</div>
